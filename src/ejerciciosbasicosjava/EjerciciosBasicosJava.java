@@ -74,7 +74,19 @@ public class EjerciciosBasicosJava {
     
     }
     
-    
+    public boolean menorPor (int a, int b, int c){
+        
+        if (a-b == 10 || a-c == 10 || b-c ==10){
+            return true;
+        }
+        
+        if (b-a == 10 || c-a == 10 || c-b ==10){
+            return true;
+        }
+        return false;
+        
+        
+    }
     
     
     
@@ -105,6 +117,13 @@ public class EjerciciosBasicosJava {
         System.out.println( ejercicio.contesta(false, false, false) );
         System.out.println( ejercicio.contesta(false, false, true) );
         System.out.println( ejercicio.contesta(true, false, false) );
+        
+        
+        System.out.println("ejercicio 05 menorPor:");
+        System.out.println( ejercicio.menorPor (1, 7, 11) );
+        System.out.println( ejercicio.menorPor (1, 7, 10) );
+        System.out.println( ejercicio.menorPor (11, 1, 7) );
+        
     }
     
 }
